@@ -3,7 +3,7 @@ $(function(){
 		//on load time 
 		$('#demo-bootstrap-textarea-line').linenumbers({col_width:'75px'});	
 		$("#auth").css("display","none");
-		$("#wsdlFile").css("display","none");
+		$("#wsdlFileBox").css("display","none");
 		
 		//action bind functions 
 		$(".addheader").on("click",function(event){
@@ -25,9 +25,9 @@ $(function(){
 		$("#wstype").on("change",function(){
 			var selectedText = $( "#wstype option:selected" ).text();
 			if(selectedText == "SOAP")
-				$("#wsdlFile").css("display","block");
+				$("#wsdlFileBox").css("display","block");
 			else
-				$("#wsdlFile").css("display","none");
+				$("#wsdlFileBox").css("display","none");
 		});
 		
 		$("#authtab").on("click",function(e){
@@ -123,5 +123,6 @@ $(function(){
 				});
 			}
 		});
+		
 		
 });
