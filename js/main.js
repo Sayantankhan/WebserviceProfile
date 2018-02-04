@@ -110,7 +110,6 @@ $(function(){
 		
 		$("#wsdlFileBox").focusout(function(e){
 			var wsdlUrl = $("#wsdlFileBox").val() || null;
-			//alert(wsdlUrl);
 			if(wsdlUrl != null){
 				$("#status").removeClass("fa-times");
 				$("#status").addClass("fa-spinner fa-spin");
